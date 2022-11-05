@@ -1,5 +1,0 @@
-vhdl work "MUX.vhd"
-vhdl work "CHANNEL1.vhd"
-vhdl work "CHANNEL0.vhd"
-vhdl work "top.vhd"
-vhdl work "TestTOP.vhd"
