@@ -1,5 +1,0 @@
-set -tmpdir "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/xst/projnav.tmp"
-set -xsthdpdir "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/xst"
-elaborate
--ifn recepcion.prj
--ifmt mixed
