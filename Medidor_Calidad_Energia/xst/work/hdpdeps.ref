@@ -1,0 +1,36 @@
+V3 17
+FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/CHANNEL0.vhd" 2022/11/03.23:32:20 P.20131013
+EN work/CHANNEL0 1667539961 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/CHANNEL0.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/CHANNEL0/Behavioral 1667539962 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/CHANNEL0.vhd" \
+      EN work/CHANNEL0 1667539961
+FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/CHANNEL1.vhd" 2022/10/23.18:45:57 P.20131013
+EN work/CHANNEL1 1667453133 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/CHANNEL1.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/CHANNEL1/Behavioral 1667453134 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/CHANNEL1.vhd" \
+      EN work/CHANNEL1 1667453133
+FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/MUX.vhd" 2022/10/23.19:35:45 P.20131013
+EN work/MUX 1667453135 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/MUX.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/MUX/Behavioral 1667453136 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/MUX.vhd" \
+      EN work/MUX 1667453135
+FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/SPI.vhd" 2022/11/03.23:32:32 P.20131013
+EN work/SPI 1667539963 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/SPI.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/SPI/Behavioral 1667539964 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/SPI.vhd" \
+      EN work/SPI 1667539963
+FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/top.vhd" 2022/11/02.23:44:22 P.20131013
+EN work/top 1667539965 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/top.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/top/Behavioral 1667539966 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/top.vhd" \
+      EN work/top 1667539965 CP work/channel0 CP work/SPI

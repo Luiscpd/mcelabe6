@@ -1,0 +1,6 @@
+EN recepcion NULL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/recepcion.vhd" sub00/vhpl02 1667640016
+AR recepcion behavioral "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/recepcion.vhd" sub00/vhpl03 1667640017
+AR uart behavioral "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/UART.vhd" sub00/vhpl01 1667640019
+EN top NULL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/top.vhd" sub00/vhpl04 1667640020
+EN uart NULL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/UART.vhd" sub00/vhpl00 1667640018
+AR top behavioral "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/top.vhd" sub00/vhpl05 1667640021

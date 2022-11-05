@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/TestTOP_isim_beh.exe" -prj "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/TestTOP_beh.prj" "work.TestTOP" 

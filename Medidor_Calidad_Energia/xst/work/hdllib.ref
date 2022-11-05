@@ -1,0 +1,10 @@
+AR mux behavioral "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/MUX.vhd" sub00/vhpl05 1667453136
+AR channel1 behavioral "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/CHANNEL1.vhd" sub00/vhpl03 1667453134
+EN spi NULL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/SPI.vhd" sub00/vhpl08 1667539963
+AR spi behavioral "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/SPI.vhd" sub00/vhpl09 1667539964
+EN channel0 NULL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/CHANNEL0.vhd" sub00/vhpl00 1667539961
+EN channel1 NULL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/CHANNEL1.vhd" sub00/vhpl02 1667453133
+EN top NULL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/top.vhd" sub00/vhpl06 1667539965
+AR channel0 behavioral "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/CHANNEL0.vhd" sub00/vhpl01 1667539962
+EN mux NULL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/MUX.vhd" sub00/vhpl04 1667453135
+AR top behavioral "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/Medidor_Calidad_Energia/top.vhd" sub00/vhpl07 1667539966

@@ -1,0 +1,22 @@
+V3 11
+FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/recepcion.vhd" 2022/11/05.03:20:12 P.20131013
+EN work/recepcion 1667640016 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/recepcion.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/recepcion/Behavioral 1667640017 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/recepcion.vhd" \
+      EN work/recepcion 1667640016
+FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/top.vhd" 2022/11/05.03:10:57 P.20131013
+EN work/top 1667640020 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/top.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/top/Behavioral 1667640021 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/top.vhd" \
+      EN work/top 1667640020 CP work/recepcion CP work/UART
+FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/UART.vhd" 2022/11/05.02:59:59 P.20131013
+EN work/UART 1667640018 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/UART.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/UART/Behavioral 1667640019 \
+      FL "D:/Documentos/USAC/2022/Segundo Semestre 2022/Electronica 6/Laboratorio Electronica 6/Proyecto/MCE_UART/UART.vhd" \
+      EN work/UART 1667640018

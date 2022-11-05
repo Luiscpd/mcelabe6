@@ -1,0 +1,3 @@
+vhdl work "SPI.vhd"
+vhdl work "CHANNEL0.vhd"
+vhdl work "top.vhd"

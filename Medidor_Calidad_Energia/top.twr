@@ -1,0 +1,487 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf elbertv2.ucf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc3s50a,tq144,-5 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "clk_12_IBUF1" PERIOD = 83.3333333 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 253 paths analyzed, 96 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.568ns.
+--------------------------------------------------------------------------------
+
+Paths for end point ADC_SPI/DATA_OUT_8 (SLICE_X4Y14.F2), 6 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     78.765ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_SPI/indice_0 (FF)
+  Destination:          ADC_SPI/DATA_OUT_8 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      4.527ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.041ns (0.224 - 0.265)
+  Source Clock:         clk_12_IBUF falling at 41.666ns
+  Destination Clock:    clk_12_IBUF falling at 124.999ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_SPI/indice_0 to ADC_SPI/DATA_OUT_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y12.YQ       Tcko                  0.524   ADC_SPI/indice<1>
+                                                       ADC_SPI/indice_0
+    SLICE_X7Y12.F2       net (fanout=14)       1.167   ADC_SPI/indice<0>
+    SLICE_X7Y12.X        Tilo                  0.562   ADC_SPI/indice<1>
+                                                       ADC_SPI/DATA_OUT_6_mux00000_SW0
+    SLICE_X4Y14.G4       net (fanout=5)        0.462   N35
+    SLICE_X4Y14.Y        Tilo                  0.616   ADC_SPI/DATA_OUT<8>
+                                                       ADC_SPI/DATA_OUT_8_mux0000211
+    SLICE_X4Y14.F2       net (fanout=1)        0.540   ADC_SPI/DATA_OUT_8_mux0000211/O
+    SLICE_X4Y14.CLK      Tfck                  0.656   ADC_SPI/DATA_OUT<8>
+                                                       ADC_SPI/DATA_OUT_8_mux000024
+                                                       ADC_SPI/DATA_OUT_8
+    -------------------------------------------------  ---------------------------
+    Total                                      4.527ns (2.358ns logic, 2.169ns route)
+                                                       (52.1% logic, 47.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     79.342ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_SPI/estados_FSM_FFd1 (FF)
+  Destination:          ADC_SPI/DATA_OUT_8 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      3.957ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.034ns (0.224 - 0.258)
+  Source Clock:         clk_12_IBUF falling at 41.666ns
+  Destination Clock:    clk_12_IBUF falling at 124.999ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_SPI/estados_FSM_FFd1 to ADC_SPI/DATA_OUT_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y13.YQ       Tcko                  0.524   ADC_SPI/estados_FSM_FFd2
+                                                       ADC_SPI/estados_FSM_FFd1
+    SLICE_X7Y12.F4       net (fanout=15)       0.597   ADC_SPI/estados_FSM_FFd1
+    SLICE_X7Y12.X        Tilo                  0.562   ADC_SPI/indice<1>
+                                                       ADC_SPI/DATA_OUT_6_mux00000_SW0
+    SLICE_X4Y14.G4       net (fanout=5)        0.462   N35
+    SLICE_X4Y14.Y        Tilo                  0.616   ADC_SPI/DATA_OUT<8>
+                                                       ADC_SPI/DATA_OUT_8_mux0000211
+    SLICE_X4Y14.F2       net (fanout=1)        0.540   ADC_SPI/DATA_OUT_8_mux0000211/O
+    SLICE_X4Y14.CLK      Tfck                  0.656   ADC_SPI/DATA_OUT<8>
+                                                       ADC_SPI/DATA_OUT_8_mux000024
+                                                       ADC_SPI/DATA_OUT_8
+    -------------------------------------------------  ---------------------------
+    Total                                      3.957ns (2.358ns logic, 1.599ns route)
+                                                       (59.6% logic, 40.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     79.346ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_SPI/indice_2 (FF)
+  Destination:          ADC_SPI/DATA_OUT_8 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      3.959ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.028ns (0.224 - 0.252)
+  Source Clock:         clk_12_IBUF falling at 41.666ns
+  Destination Clock:    clk_12_IBUF falling at 124.999ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_SPI/indice_2 to ADC_SPI/DATA_OUT_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y17.YQ       Tcko                  0.524   ADC_SPI/indice<3>
+                                                       ADC_SPI/indice_2
+    SLICE_X4Y14.G1       net (fanout=20)       1.623   ADC_SPI/indice<2>
+    SLICE_X4Y14.Y        Tilo                  0.616   ADC_SPI/DATA_OUT<8>
+                                                       ADC_SPI/DATA_OUT_8_mux0000211
+    SLICE_X4Y14.F2       net (fanout=1)        0.540   ADC_SPI/DATA_OUT_8_mux0000211/O
+    SLICE_X4Y14.CLK      Tfck                  0.656   ADC_SPI/DATA_OUT<8>
+                                                       ADC_SPI/DATA_OUT_8_mux000024
+                                                       ADC_SPI/DATA_OUT_8
+    -------------------------------------------------  ---------------------------
+    Total                                      3.959ns (1.796ns logic, 2.163ns route)
+                                                       (45.4% logic, 54.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point ADC_SPI/DATA_OUT_2 (SLICE_X5Y14.F4), 6 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     79.052ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_SPI/estados_FSM_FFd1 (FF)
+  Destination:          ADC_SPI/DATA_OUT_2 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      4.247ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.034ns (0.224 - 0.258)
+  Source Clock:         clk_12_IBUF falling at 41.666ns
+  Destination Clock:    clk_12_IBUF falling at 124.999ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_SPI/estados_FSM_FFd1 to ADC_SPI/DATA_OUT_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y13.YQ       Tcko                  0.524   ADC_SPI/estados_FSM_FFd2
+                                                       ADC_SPI/estados_FSM_FFd1
+    SLICE_X6Y17.G2       net (fanout=15)       0.921   ADC_SPI/estados_FSM_FFd1
+    SLICE_X6Y17.Y        Tilo                  0.616   ADC_SPI/DATA_OUT_6_mux00003
+                                                       ADC_SPI/DATA_OUT_6_mux00003_SW0
+    SLICE_X9Y16.F2       net (fanout=2)        0.379   N51
+    SLICE_X9Y16.X        Tilo                  0.562   ADC_SPI/indice_3_1
+                                                       ADC_SPI/DATA_OUT_2_mux00005
+    SLICE_X5Y14.F4       net (fanout=1)        0.643   ADC_SPI/DATA_OUT_2_mux00005
+    SLICE_X5Y14.CLK      Tfck                  0.602   ADC_SPI/DATA_OUT<2>
+                                                       ADC_SPI/DATA_OUT_2_mux000020
+                                                       ADC_SPI/DATA_OUT_2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.247ns (2.304ns logic, 1.943ns route)
+                                                       (54.3% logic, 45.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     79.073ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_SPI/indice_0 (FF)
+  Destination:          ADC_SPI/DATA_OUT_2 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      4.219ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.041ns (0.224 - 0.265)
+  Source Clock:         clk_12_IBUF falling at 41.666ns
+  Destination Clock:    clk_12_IBUF falling at 124.999ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_SPI/indice_0 to ADC_SPI/DATA_OUT_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y12.YQ       Tcko                  0.524   ADC_SPI/indice<1>
+                                                       ADC_SPI/indice_0
+    SLICE_X6Y17.G3       net (fanout=14)       0.893   ADC_SPI/indice<0>
+    SLICE_X6Y17.Y        Tilo                  0.616   ADC_SPI/DATA_OUT_6_mux00003
+                                                       ADC_SPI/DATA_OUT_6_mux00003_SW0
+    SLICE_X9Y16.F2       net (fanout=2)        0.379   N51
+    SLICE_X9Y16.X        Tilo                  0.562   ADC_SPI/indice_3_1
+                                                       ADC_SPI/DATA_OUT_2_mux00005
+    SLICE_X5Y14.F4       net (fanout=1)        0.643   ADC_SPI/DATA_OUT_2_mux00005
+    SLICE_X5Y14.CLK      Tfck                  0.602   ADC_SPI/DATA_OUT<2>
+                                                       ADC_SPI/DATA_OUT_2_mux000020
+                                                       ADC_SPI/DATA_OUT_2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.219ns (2.304ns logic, 1.915ns route)
+                                                       (54.6% logic, 45.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     79.360ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_SPI/indice_1_1 (FF)
+  Destination:          ADC_SPI/DATA_OUT_2 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      3.937ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.036ns (0.224 - 0.260)
+  Source Clock:         clk_12_IBUF falling at 41.666ns
+  Destination Clock:    clk_12_IBUF falling at 124.999ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_SPI/indice_1_1 to ADC_SPI/DATA_OUT_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y14.YQ       Tcko                  0.596   ADC_SPI/indice_1_1
+                                                       ADC_SPI/indice_1_1
+    SLICE_X6Y17.G1       net (fanout=4)        0.539   ADC_SPI/indice_1_1
+    SLICE_X6Y17.Y        Tilo                  0.616   ADC_SPI/DATA_OUT_6_mux00003
+                                                       ADC_SPI/DATA_OUT_6_mux00003_SW0
+    SLICE_X9Y16.F2       net (fanout=2)        0.379   N51
+    SLICE_X9Y16.X        Tilo                  0.562   ADC_SPI/indice_3_1
+                                                       ADC_SPI/DATA_OUT_2_mux00005
+    SLICE_X5Y14.F4       net (fanout=1)        0.643   ADC_SPI/DATA_OUT_2_mux00005
+    SLICE_X5Y14.CLK      Tfck                  0.602   ADC_SPI/DATA_OUT<2>
+                                                       ADC_SPI/DATA_OUT_2_mux000020
+                                                       ADC_SPI/DATA_OUT_2
+    -------------------------------------------------  ---------------------------
+    Total                                      3.937ns (2.376ns logic, 1.561ns route)
+                                                       (60.4% logic, 39.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point ADC_SPI/DATA_OUT_6 (SLICE_X7Y16.F3), 6 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     79.086ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_SPI/indice_0 (FF)
+  Destination:          ADC_SPI/DATA_OUT_6 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      4.204ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.043ns (0.222 - 0.265)
+  Source Clock:         clk_12_IBUF falling at 41.666ns
+  Destination Clock:    clk_12_IBUF falling at 124.999ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_SPI/indice_0 to ADC_SPI/DATA_OUT_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y12.YQ       Tcko                  0.524   ADC_SPI/indice<1>
+                                                       ADC_SPI/indice_0
+    SLICE_X7Y12.F2       net (fanout=14)       1.167   ADC_SPI/indice<0>
+    SLICE_X7Y12.X        Tilo                  0.562   ADC_SPI/indice<1>
+                                                       ADC_SPI/DATA_OUT_6_mux00000_SW0
+    SLICE_X7Y16.G1       net (fanout=5)        0.767   N35
+    SLICE_X7Y16.Y        Tilo                  0.561   ADC_SPI/DATA_OUT<6>
+                                                       ADC_SPI/DATA_OUT_6_mux00000
+    SLICE_X7Y16.F3       net (fanout=1)        0.021   ADC_SPI/DATA_OUT_6_mux00000/O
+    SLICE_X7Y16.CLK      Tfck                  0.602   ADC_SPI/DATA_OUT<6>
+                                                       ADC_SPI/DATA_OUT_6_mux000013
+                                                       ADC_SPI/DATA_OUT_6
+    -------------------------------------------------  ---------------------------
+    Total                                      4.204ns (2.249ns logic, 1.955ns route)
+                                                       (53.5% logic, 46.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     79.663ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_SPI/estados_FSM_FFd1 (FF)
+  Destination:          ADC_SPI/DATA_OUT_6 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      3.634ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.036ns (0.222 - 0.258)
+  Source Clock:         clk_12_IBUF falling at 41.666ns
+  Destination Clock:    clk_12_IBUF falling at 124.999ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_SPI/estados_FSM_FFd1 to ADC_SPI/DATA_OUT_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y13.YQ       Tcko                  0.524   ADC_SPI/estados_FSM_FFd2
+                                                       ADC_SPI/estados_FSM_FFd1
+    SLICE_X7Y12.F4       net (fanout=15)       0.597   ADC_SPI/estados_FSM_FFd1
+    SLICE_X7Y12.X        Tilo                  0.562   ADC_SPI/indice<1>
+                                                       ADC_SPI/DATA_OUT_6_mux00000_SW0
+    SLICE_X7Y16.G1       net (fanout=5)        0.767   N35
+    SLICE_X7Y16.Y        Tilo                  0.561   ADC_SPI/DATA_OUT<6>
+                                                       ADC_SPI/DATA_OUT_6_mux00000
+    SLICE_X7Y16.F3       net (fanout=1)        0.021   ADC_SPI/DATA_OUT_6_mux00000/O
+    SLICE_X7Y16.CLK      Tfck                  0.602   ADC_SPI/DATA_OUT<6>
+                                                       ADC_SPI/DATA_OUT_6_mux000013
+                                                       ADC_SPI/DATA_OUT_6
+    -------------------------------------------------  ---------------------------
+    Total                                      3.634ns (2.249ns logic, 1.385ns route)
+                                                       (61.9% logic, 38.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     79.823ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               ADC_SPI/estados_FSM_FFd2_2 (FF)
+  Destination:          ADC_SPI/DATA_OUT_6 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      3.467ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.043ns (0.222 - 0.265)
+  Source Clock:         clk_12_IBUF falling at 41.666ns
+  Destination Clock:    clk_12_IBUF falling at 124.999ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: ADC_SPI/estados_FSM_FFd2_2 to ADC_SPI/DATA_OUT_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y13.YQ       Tcko                  0.524   ADC_SPI/estados_FSM_FFd2_2
+                                                       ADC_SPI/estados_FSM_FFd2_2
+    SLICE_X7Y12.F1       net (fanout=2)        0.430   ADC_SPI/estados_FSM_FFd2_2
+    SLICE_X7Y12.X        Tilo                  0.562   ADC_SPI/indice<1>
+                                                       ADC_SPI/DATA_OUT_6_mux00000_SW0
+    SLICE_X7Y16.G1       net (fanout=5)        0.767   N35
+    SLICE_X7Y16.Y        Tilo                  0.561   ADC_SPI/DATA_OUT<6>
+                                                       ADC_SPI/DATA_OUT_6_mux00000
+    SLICE_X7Y16.F3       net (fanout=1)        0.021   ADC_SPI/DATA_OUT_6_mux00000/O
+    SLICE_X7Y16.CLK      Tfck                  0.602   ADC_SPI/DATA_OUT<6>
+                                                       ADC_SPI/DATA_OUT_6_mux000013
+                                                       ADC_SPI/DATA_OUT_6
+    -------------------------------------------------  ---------------------------
+    Total                                      3.467ns (2.249ns logic, 1.218ns route)
+                                                       (64.9% logic, 35.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "clk_12_IBUF1" PERIOD = 83.3333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point ADC_SPI/DATA_OUT_9 (SLICE_X7Y18.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.060ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               ADC_SPI/DATA_OUT_9 (FF)
+  Destination:          ADC_SPI/DATA_OUT_9 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.060ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_12_IBUF falling at 124.999ns
+  Destination Clock:    clk_12_IBUF falling at 124.999ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: ADC_SPI/DATA_OUT_9 to ADC_SPI/DATA_OUT_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y18.XQ       Tcko                  0.396   ADC_SPI/DATA_OUT<9>
+                                                       ADC_SPI/DATA_OUT_9
+    SLICE_X7Y18.F4       net (fanout=2)        0.258   ADC_SPI/DATA_OUT<9>
+    SLICE_X7Y18.CLK      Tckf        (-Th)    -0.406   ADC_SPI/DATA_OUT<9>
+                                                       ADC_SPI/DATA_OUT_9_mux000029
+                                                       ADC_SPI/DATA_OUT_9
+    -------------------------------------------------  ---------------------------
+    Total                                      1.060ns (0.802ns logic, 0.258ns route)
+                                                       (75.7% logic, 24.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point ADC_SPI/DATA_OUT_6 (SLICE_X7Y16.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.060ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               ADC_SPI/DATA_OUT_6 (FF)
+  Destination:          ADC_SPI/DATA_OUT_6 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.060ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_12_IBUF falling at 124.999ns
+  Destination Clock:    clk_12_IBUF falling at 124.999ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: ADC_SPI/DATA_OUT_6 to ADC_SPI/DATA_OUT_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y16.XQ       Tcko                  0.396   ADC_SPI/DATA_OUT<6>
+                                                       ADC_SPI/DATA_OUT_6
+    SLICE_X7Y16.F4       net (fanout=2)        0.258   ADC_SPI/DATA_OUT<6>
+    SLICE_X7Y16.CLK      Tckf        (-Th)    -0.406   ADC_SPI/DATA_OUT<6>
+                                                       ADC_SPI/DATA_OUT_6_mux000013
+                                                       ADC_SPI/DATA_OUT_6
+    -------------------------------------------------  ---------------------------
+    Total                                      1.060ns (0.802ns logic, 0.258ns route)
+                                                       (75.7% logic, 24.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point ADC_SPI/DATA_OUT_7 (SLICE_X6Y19.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.124ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               ADC_SPI/DATA_OUT_7 (FF)
+  Destination:          ADC_SPI/DATA_OUT_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.124ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_12_IBUF falling at 124.999ns
+  Destination Clock:    clk_12_IBUF falling at 124.999ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: ADC_SPI/DATA_OUT_7 to ADC_SPI/DATA_OUT_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y19.XQ       Tcko                  0.417   ADC_SPI/DATA_OUT<7>
+                                                       ADC_SPI/DATA_OUT_7
+    SLICE_X6Y19.F4       net (fanout=2)        0.269   ADC_SPI/DATA_OUT<7>
+    SLICE_X6Y19.CLK      Tckf        (-Th)    -0.438   ADC_SPI/DATA_OUT<7>
+                                                       ADC_SPI/DATA_OUT_7_mux000027
+                                                       ADC_SPI/DATA_OUT_7
+    -------------------------------------------------  ---------------------------
+    Total                                      1.124ns (0.855ns logic, 0.269ns route)
+                                                       (76.1% logic, 23.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clk_12_IBUF1" PERIOD = 83.3333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: ADC_SPI/DATA_OUT<0>/CLK
+  Logical resource: ADC_SPI/DATA_OUT_0/CK
+  Location pin: SLICE_X6Y15.CLK
+  Clock network: clk_12_IBUF
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 83.333ns
+  High pulse: 41.666ns
+  High pulse limit: 0.664ns (Tch)
+  Physical resource: ADC_SPI/DATA_OUT<0>/CLK
+  Logical resource: ADC_SPI/DATA_OUT_0/CK
+  Location pin: SLICE_X6Y15.CLK
+  Clock network: clk_12_IBUF
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: ADC_SPI/DATA_OUT<7>/CLK
+  Logical resource: ADC_SPI/DATA_OUT_7/CK
+  Location pin: SLICE_X6Y19.CLK
+  Clock network: clk_12_IBUF
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk_12
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_12         |         |         |         |    4.568|
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 253 paths, 0 nets, and 254 connections
+
+Design statistics:
+   Minimum period:   4.568ns{1}   (Maximum frequency: 218.914MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu Nov 03 23:33:04 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4522 MB
+
+
+

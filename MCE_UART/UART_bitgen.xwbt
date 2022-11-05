@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Documentos\USAC\2022\Segundo Semestre 2022\Electronica 6\Laboratorio Electronica 6\Proyecto\MCE_UART\UART.ncd
+OUTFILE=D:\Documentos\USAC\2022\Segundo Semestre 2022\Electronica 6\Laboratorio Electronica 6\Proyecto\MCE_UART\UART.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5tq144
+WORKINGDIR=D:\Documentos\USAC\2022\Segundo Semestre 2022\Electronica 6\Laboratorio Electronica 6\Proyecto\MCE_UART
+LICENSE=WebPack
+USER_INFO=__0_0_0

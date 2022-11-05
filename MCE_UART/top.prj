@@ -1,0 +1,3 @@
+vhdl work "UART.vhd"
+vhdl work "recepcion.vhd"
+vhdl work "top.vhd"
